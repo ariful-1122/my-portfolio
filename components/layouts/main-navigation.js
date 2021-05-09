@@ -25,7 +25,7 @@ function MainNavigation() {
   return (
     <Container className={navBg && "active"}>
       <Logo>
-        <Link href="/">Max</Link>
+        <Link href="/">Arif</Link>
       </Logo>
       <NavMenu>
         <Link href="/">

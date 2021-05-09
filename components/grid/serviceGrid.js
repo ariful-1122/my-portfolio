@@ -48,7 +48,7 @@ const ServiceGrid = () => {
       </Wrap>
       <Wrap>
         <img src="/images/service/data.svg" />
-        <h2>SPA Developement</h2>
+        <h2>SPA Development</h2>
 
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium

@@ -14,7 +14,7 @@ function Home() {
       <HeroBackground>
         <Container>
           <h1>
-            Hello, I'm <span>Max</span> <br /> I am a Web Developer
+            Hello, I'm <span>Ariful</span> <br /> I am a Web Developer
           </h1>
         </Container>
         <ContactButton>
