@@ -42,7 +42,7 @@ function MainNavigation() {
         </Link>
         <Link href="/#project">
           <a>
-            <Project />
+            <AiOutlineFundProjectionScreen style={{color: "#ffeb3b"}} />
             <span>Project</span>
           </a>
         </Link>
@@ -71,9 +71,9 @@ function MainNavigation() {
 
 export default MainNavigation;
 
-const Project = styled(AiOutlineFundProjectionScreen)`
-  color: #ffeb3b;
-`;
+// const Project = styled(AiOutlineFundProjectionScreen)`
+//   color: #ffeb3b;
+// `;
 
 const Container = styled.nav`
   width: 100%;
