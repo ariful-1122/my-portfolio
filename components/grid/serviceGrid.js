@@ -8,31 +8,27 @@ const ServiceGrid = () => {
         <img src="/images/service/physics.png" />
         <h2>Website Pro</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-          sunt porro alias possimus voluptatum dignissimos, aliquam, aut officia
-          fugiat impedit ad voluptate adipisci, eligendi fuga in natus qui nihil
-          et.
+          I can build any kind of Website Using Modern Web
+          Technologies.Technologies like React, NextJs, NodeJs, MongoDB e.t.c
+          Which are very popular on current Web World.
         </p>
       </Wrap>
       <Wrap>
         <img src="/images/service/web-design.png" />
         <h2>Web Design</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-          sunt porro alias possimus voluptatum dignissimos, aliquam, aut officia
-          fugiat impedit ad voluptate adipisci, eligendi fuga in natus qui nihil
-          et.
+          I will design high quality and very Professional Web Design and fully
+          Responsive Website Design focused on your specific business needs,
+          which are of the highest quality at affordable prices.
         </p>
       </Wrap>
       <Wrap>
         <img src="/images/service/web-development.svg" />
         <h2>Web Developement</h2>
-
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-          sunt porro alias possimus voluptatum dignissimos, aliquam, aut officia
-          fugiat impedit ad voluptate adipisci, eligendi fuga in natus qui nihil
-          et.
+          Web Developement is one of the most demandable Profession now a
+          days.And I do this with full of Passion.In this Sector I have 2 Years
+          more Experience
         </p>
       </Wrap>
       <Wrap>
@@ -40,10 +36,8 @@ const ServiceGrid = () => {
         <h2>Web Application</h2>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-          sunt porro alias possimus voluptatum dignissimos, aliquam, aut officia
-          fugiat impedit ad voluptate adipisci, eligendi fuga in natus qui nihil
-          et.
+          I am a full stack web developer with over 4 years of experience. I am
+          well experience in developing small to large scale web application.
         </p>
       </Wrap>
       <Wrap>
@@ -51,20 +45,17 @@ const ServiceGrid = () => {
         <h2>SPA Development</h2>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-          sunt porro alias possimus voluptatum dignissimos, aliquam, aut officia
-          fugiat impedit ad voluptate adipisci, eligendi fuga in natus qui nihil
-          et.
+          Single Page Applicaton is one of the most used Web Term now a
+          days.Which is Super Populer and its using big Giant Companies.To Do
+          that knock me
         </p>
       </Wrap>
       <Wrap>
         <img src="/images/service/blog.svg" />
         <h2>Blog Site Creation</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-          sunt porro alias possimus voluptatum dignissimos, aliquam, aut officia
-          fugiat impedit ad voluptate adipisci, eligendi fuga in natus qui nihil
-          et.
+          There is only way to expose your articles public blog is the best
+          way.I can develop this kind of site with affordable Price
         </p>
       </Wrap>
     </Content>
@@ -113,7 +104,8 @@ const Wrap = styled.div`
     }
   }
   h2 {
-    font-size: 3rem;
+    font-size: 2.4rem;
+    text-transform: uppercase;
   }
 
   p {

@@ -55,7 +55,10 @@ const HeroBackground = styled.div`
   z-index: -1;
 
   @media only screen and (max-width: 768px) {
-    height: 75vh;
+    height: 60vh;
+  }
+   @media only screen and (max-width: 576px) {
+    height: 50vh;
   }
 `;
 
