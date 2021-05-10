@@ -42,6 +42,11 @@ const Content = styled.div`
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-gap: 5rem;
   justify-items: space-between;
+
+  @media only screen and (max-width: 800px) {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 `;
 
 const ContentText = styled.div`
@@ -80,6 +85,10 @@ const ContentImg = styled.div`
   width: 40rem;
   border-radius: 1rem;
   overflow: hidden;
+
+  @media only screen and (max-width: 800px) {
+    width: 100%;
+  }
 
   img {
     width: 100%;

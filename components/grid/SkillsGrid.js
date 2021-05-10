@@ -68,6 +68,12 @@ const Content = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-gap: 2.5rem;
+
+  @media only screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-gap: 2.5rem;
+  }
 `;
 const SkillsLeft = styled.div``;
 const WrapHTML = styled.div`

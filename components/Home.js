@@ -53,6 +53,10 @@ const HeroBackground = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
+
+  @media only screen and (max-width: 768px) {
+    height: 75vh;
+  }
 `;
 
 const Container = styled.div`
@@ -83,8 +87,8 @@ const Container = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    span {
-      color: #fff;
+    @media only screen and (max-width: 768px) {
+      font-size: 5rem;
     }
   }
 `;

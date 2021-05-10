@@ -41,5 +41,9 @@ const ContactTitle = styled.div`
     color: #0e1525;
     text-transform: uppercase;
     text-shadow: 2 2rem 4rem rgba(28, 153, 254, 0.5);
+
+    @media only screen and (max-width: 768px) {
+      font-size: 4rem;
+    }
   }
 `;

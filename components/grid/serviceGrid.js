@@ -77,6 +77,18 @@ const Content = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-gap: 2.5rem;
+
+  @media only screen and (max-width: 992px) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 2.5rem;
+  }
+
+  @media only screen and (max-width: 576px) {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-gap: 2.5rem;
+  }
 `;
 
 const Wrap = styled.div`
@@ -95,6 +107,10 @@ const Wrap = styled.div`
 
   img {
     width: 30%;
+
+    @media only screen and (max-width: 576px) {
+      width: 20%;
+    }
   }
   h2 {
     font-size: 3rem;
