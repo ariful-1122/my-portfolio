@@ -77,10 +77,18 @@ const Wrap = styled.div`
       font-size: 2rem;
       font-weight: 100;
       margin-top: 0.5rem;
+
+      @media only screen and (max-width: 576px) {
+        font-size: 1.5rem;
+      }
     }
   }
 `;
 
 const CopyRight = styled.p`
   font-size: 1.4rem;
+
+  @media only screen and (max-width: 576px) {
+    font-size: 1.2rem;
+  }
 `;

@@ -57,7 +57,10 @@ const HeroBackground = styled.div`
   @media only screen and (max-width: 768px) {
     height: 60vh;
   }
-   @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 576px) {
+    height: 50vh;
+  }
+  @media only screen and (max-width: 480px) {
     height: 50vh;
   }
 `;
@@ -92,6 +95,13 @@ const Container = styled.div`
 
     @media only screen and (max-width: 768px) {
       font-size: 5rem;
+    }
+
+    @media only screen and (max-width: 576px) {
+      font-size: 4rem;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 3rem;
     }
   }
 `;
@@ -134,6 +144,11 @@ const ContactButton = styled.div`
         #004d73,
         #0c1a30
       );
+    }
+
+    @media only screen and (max-width: 768px) {
+      padding: 1rem 3rem;
+      font-size: 1.5rem;
     }
   }
 `;

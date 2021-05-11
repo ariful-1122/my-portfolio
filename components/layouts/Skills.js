@@ -41,5 +41,10 @@ const SkillsTitle = styled.div`
   h1 {
     font-size: 5rem;
     color: #fff;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 4rem;
+    }
   }
 `;

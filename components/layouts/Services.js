@@ -31,5 +31,10 @@ const Container = styled.div`
     font-size: 5rem;
     text-align: center;
     padding: 4rem 0;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 4rem;
+      padding: 3rem 0;
+    }
   }
 `;

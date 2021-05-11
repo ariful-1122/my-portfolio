@@ -70,6 +70,15 @@ const ContentText = styled.div`
   h1 {
     font-size: 8rem;
     font-weight: 900;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 6rem;
+      font-weight: 700;
+    }
+    @media only screen and (max-width: 768px) {
+      font-size: 4rem;
+      font-weight: 700;
+    }
   }
 
   h3 {

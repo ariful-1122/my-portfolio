@@ -34,7 +34,6 @@ const ServiceGrid = () => {
       <Wrap>
         <img src="/images/service/computer.svg" />
         <h2>Web Application</h2>
-
         <p>
           I am a full stack web developer with over 4 years of experience. I am
           well experience in developing small to large scale web application.

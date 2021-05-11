@@ -29,6 +29,12 @@ const ProjectTitle = styled.div`
   h1 {
     font-size: 4rem;
     font-weight: 900;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
   }
 
   p {
