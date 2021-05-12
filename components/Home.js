@@ -11,7 +11,7 @@ import Copyright from "./layouts/Copyright";
 function Home() {
   return (
     <>
-      <HeroBackground>
+      <HeroBackground id="home">
         <Container>
           <h1>
             Hello, I'm <span>Ariful</span> <br /> I am a Web Developer

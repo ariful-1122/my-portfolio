@@ -9,6 +9,7 @@ import {
   FcServices,
 } from "react-icons/fc";
 import {AiOutlineFundProjectionScreen} from "react-icons/ai";
+import NavButton from "../button/NavButton";
 
 function MainNavigation() {
   const [navBg, setNavBg] = useState(false);
@@ -27,6 +28,7 @@ function MainNavigation() {
       <Logo>
         <Link href="/">Arif</Link>
       </Logo>
+
       <NavMenu>
         <Link href="/">
           <a>
@@ -65,19 +67,18 @@ function MainNavigation() {
           </a>
         </Link>
       </NavMenu>
+      <MobileMenu>
+        <NavButton />
+      </MobileMenu>
     </Container>
   );
 }
 
 export default MainNavigation;
 
-// const Project = styled(AiOutlineFundProjectionScreen)`
-//   color: #ffeb3b;
-// `;
-
 const Container = styled.nav`
   width: 100%;
-  height: 70px;
+  height: 7rem;
   position: fixed;
   z-index: 10;
   background: transparent;
@@ -95,6 +96,12 @@ const Logo = styled.div`
     font-size: 3rem;
     text-transform: uppercase;
     color: #fff;
+  }
+`;
+
+const MobileMenu = styled.div`
+  @media only screen and (min-width: 900px) {
+    display: none;
   }
 `;
 const NavMenu = styled.div`
@@ -137,5 +144,9 @@ const NavMenu = styled.div`
         width: 100%;
       }
     }
+  }
+
+  @media only screen and (max-width: 900px) {
+    display: none;
   }
 `;
