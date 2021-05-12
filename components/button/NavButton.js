@@ -19,7 +19,7 @@ function NavButton() {
   }
 
   function closeHandler() {
-    setIsChecked(false);
+    setIsChecked(true);
     document.querySelector(".NavBack").style = "transform:scale(1)";
     document.querySelector(".Nav").style.width = "0";
     document.querySelector(".Nav").style.opacity = "0";
