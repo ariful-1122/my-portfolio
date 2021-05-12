@@ -3,11 +3,11 @@ import styled, {createGlobalStyle} from "styled-components";
 import Link from "next/link";
 
 function NavButton() {
-  const [isChecked, setIsChecked] = useState(true);
+  const [isChecked, setIsChecked] = useState(false);
 
   function checkHandler(e) {
-    setIsChecked(!isChecked);
-    if (isChecked) {
+    setIsChecked(prev => !prev);
+    if (!isChecked) {
       document.querySelector(".NavBack").style = "transform:scale(80)";
       document.querySelector(".Nav").style.width = "100%";
       document.querySelector(".Nav").style.opacity = "1";
@@ -19,7 +19,7 @@ function NavButton() {
   }
 
   function closeHandler() {
-    setIsChecked(true);
+    setIsChecked(false);
     document.querySelector(".NavBack").style = "transform:scale(1)";
     document.querySelector(".Nav").style.width = "0";
     document.querySelector(".Nav").style.opacity = "0";
@@ -27,7 +27,12 @@ function NavButton() {
 
   return (
     <Navigation>
-      <NavInput onChange={checkHandler} type="checkbox" id="navi-toggle" />
+      <NavInput
+        value={isChecked}
+        onChange={checkHandler}
+        type="checkbox"
+        id="navi-toggle"
+      />
       <NavigationButton className="navButton" htmlFor="navi-toggle">
         <NavigationIcon className="resetCross">&nbsp;</NavigationIcon>
       </NavigationButton>
