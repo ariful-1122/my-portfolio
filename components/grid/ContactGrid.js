@@ -1,8 +1,53 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import {FaPhoneAlt, FaEnvelope} from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import Loader from "../loader/Loader";
+import { toast } from "react-toastify";
 
 function ContactGrid() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState();
+
+  async function SubmitHandler(e) {
+    e.preventDefault();
+    setStatus("pending");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (!res.ok) {
+        throw new Error(data.message || "something went wrong");
+      }
+      setStatus("success");
+    } catch (error) {
+      setStatus("error");
+    }
+  }
+
+  useEffect(() => {
+    if (status === "error") {
+      toast.error("Message Send Fail😢");
+    }
+    if (status === "success") {
+      toast.success("Message Send Successful!😊");
+      setName("");
+      setEmail("");
+      setMessage("");
+      setStatus();
+    }
+  }, [status]);
+
   return (
     <Content>
       <Wrap>
@@ -12,6 +57,8 @@ function ContactGrid() {
             <input
               required
               id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               placeholder="Type Your Name"
               type="text"
             />
@@ -22,6 +69,8 @@ function ContactGrid() {
               required
               id="email"
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="Type Your Email"
               type="text"
             />
@@ -32,10 +81,16 @@ function ContactGrid() {
               placeholder="Type Your Message"
               id="message"
               rows="5"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </Controls>
           <Cta>
-            <button>Send Message</button>
+            {status === "pending" ? (
+              <Loader />
+            ) : (
+              <button onClick={SubmitHandler}>Send Message </button>
+            )}
           </Cta>
         </form>
       </Wrap>
@@ -64,8 +119,10 @@ function ContactGrid() {
             </i>
           </p>
           <Tel>
+            <a href="mailto:arifreelancer9@gmail.com">
+              arifreelancer9@gmail.com
+            </a>
             <a href="mailto:greenheart970@gmail.com">greenheart970@gmail.com</a>
-            <a href="mailto:gmailexample@gmail.com">gmailexample@gmail.com</a>
           </Tel>
         </ContactResource>
       </WrapRight>

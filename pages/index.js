@@ -16,7 +16,7 @@ function HomePage() {
       <Home />
     </>
   );
-  s;
+  
 }
 
 export default HomePage;

@@ -1,6 +1,8 @@
 import Layout from "../components/layouts/layout";
 import "../styles/scss/main.scss";
 import Head from "next/head";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function MyApp({Component, pageProps}) {
   return (
@@ -11,6 +13,7 @@ function MyApp({Component, pageProps}) {
         <meta name="description" content="top nextjs developer in the world" />
       </Head>
       <Component {...pageProps} />
+      <ToastContainer/>
     </Layout>
   );
 }

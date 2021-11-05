@@ -1,0 +1,8 @@
+{
+   "terminal.integrated.fontSize": 13,
+   "editor.fontSize": 19,
+   "editor.multiCursorModifier": "ctrlCmd",
+   "editor.defaultFormatter": "esbenp.prettier-vscode",
+   "editor.formatOnSave": true,
+   "editor.formatOnPaste": true
+}

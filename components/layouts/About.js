@@ -10,16 +10,16 @@ function About() {
           <p>Know About Me</p>
           <h1>About Me</h1>
           <h3>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            amet rerum nesciunt quas sapiente asperiores necessitatibus nulla.
-            Sint nisi ad cupiditate beatae laboriosam totam libero odio, est
-            ipsum excepturi fugiat.
+            Hi I'm Ariful. I am a full-stack Web Developer. I've been working on
+            the industry for the last 2 years. I can work both frontend and
+            backend. I love working on business ideas of clients and turning the
+            thoughts into a full-blown reality. I love to learn modern web
+            technologies and work with them.
           </h3>
           <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            veniam doloribus quo, soluta voluptatibus autem quibusdam ut nobis,
-            pariatur non distinctio nihil. Maxime alias quia similique magnam
-            deserunt eaque voluptate.
+            The satisfaction of my clients is my topmost priority. My expertise
+            are in: 1. React JS 2.Next JS. 3.HTML & CSS. 4.JavaScript. 5.Node
+            JS. 6.MongoDB. 7.Redux. 8.BootStrap.
           </h3>
         </ContentText>
         <ContentImg>
